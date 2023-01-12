@@ -18,6 +18,21 @@ import linkedinSvg from "../../assets/svg/Linkedinlogo.svg";
 export default function Footer() {
   return (
     <footer>
+      <div className={styles.news_letter}>
+        <div className={styles.first_div_news}>
+          <div className={styles.container_news}>
+            <h2>assine nossa newsletter</h2>
+            <div className={styles.second_div_news}>
+              <input
+                type="email"
+                placeholder="E-mail"
+                className={styles.news_input}
+              />
+              <button className={styles.news_button}>enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.footer_top}>
         <div className={styles.menu_list}>
           <div>

@@ -1,3 +1,109 @@
+// --------------------- News Letter --------------------- //
+
+.news_letter {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .first_div_news {
+    width: 37.03%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      padding: 16px 0 8px;
+      display: flex;
+      margin: auto;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      color: #303030;
+      margin-left: 0;
+    }
+
+    .second_div_news {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding-bottom: 16px;
+
+      .news_input {
+        width: 71.73%;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 11px 16px;
+        max-height: 42px;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+
+        &::placeholder {
+          color: #c4c4c4;
+        }
+      }
+
+      .news_button {
+        width: 26.58%;
+        min-height: 42px;
+        background: #000000;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        border: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .first_div_news {
+    width: 96.88% !important;
+
+    h2 {
+      font-size: 14px;
+    }
+
+    .second_div_news {
+      flex-direction: column;
+      width: 100%;
+
+      .news_input {
+        width: 100% !important;
+      }
+
+      .news_button {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  h2 {
+    font-size: 36px !important;
+  }
+
+  .news_input {
+    max-height: unset !important;
+    height: 59px;
+    font-size: 28px !important;
+  }
+
+  .news_button {
+    height: 59px;
+    font-size: 24px !important;
+  }
+}
+
+// --------------------- Footer Top --------------------- //
+
 .footer_top {
   display: flex;
   justify-content: space-between;
@@ -52,6 +158,8 @@
   }
 }
 
+// --------------------- Footer Bottom --------------------- //
+
 .footer_bottom {
   justify-content: space-between;
   background-color: #000000;
@@ -64,7 +172,7 @@
     white-space: nowrap;
     color: #ffffff;
     font-weight: 400;
-    font-size: 0.78vw;
+    font-size: 10px;
     line-height: 0.93vw;
     width: 18.28vw;
     text-align: left;
@@ -73,13 +181,13 @@
   .pagamentos {
     display: flex;
     align-items: center;
-    gap: 0.93vw;
+    gap: 12px;
 
     .bandeiras {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0.93vw;
+      gap: 12px;
       margin-left: 8.63vw;
       img {
         width: 2.81vw;
@@ -103,7 +211,7 @@
 
   .logos {
     margin-left: 8.63vw;
-    gap: 1.02vw;
+    gap: 13px;
     display: flex;
 
     p {
