@@ -1,3 +1,3 @@
 export default function Institutional() {
-  return <div>bastente sexo</div>;
+  return <div>teste 2</div>;
 }
