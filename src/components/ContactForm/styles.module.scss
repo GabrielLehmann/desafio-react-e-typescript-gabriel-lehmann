@@ -1,0 +1,108 @@
+.form_title {
+  font-weight: 700;
+  font-size: 1.88vw;
+  line-height: 28px;
+}
+.contact_form {
+  .Field {
+    width: 748px;
+    font-size: 1.09vw;
+    line-height: 16px;
+    padding: 11px 16px;
+    max-height: 46px;
+    border: 1px solid #100d0e;
+    border-radius: 25px;
+  }
+  form {
+    > div {
+      position: relative;
+      gap: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      min-height: 52.44px;
+      background: #000000;
+      color: white;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+  }
+  .label_form {
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 1.09vw;
+    line-height: 16px;
+    color: #100d0e;
+  }
+
+  .span_form {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #ff0000;
+  }
+
+  .confirm_form {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    span {
+      cursor: pointer;
+      color: #ff0000;
+      font-weight: 400;
+      font-size: 0.93vw;
+      line-height: 1.09vw;
+    }
+    label {
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 1.09vw;
+      line-height: 1.25vw;
+    }
+    .Field_confirm {
+      cursor: pointer;
+      width: 18.64px;
+      height: 18px;
+    }
+  }
+  .confirm_span {
+    font-weight: 400;
+    font-size: 0.93vw;
+    line-height: 1.09vw;
+    color: #008000;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .contact_form {
+    .Field {
+      width: 1680px;
+      max-height: 63px;
+    }
+    form {
+      button {
+        min-height: 71px;
+        font-size: 38px;
+      }
+    }
+    .span_form {
+      font-size: 24px;
+      line-height: 5px;
+    }
+  }
+}

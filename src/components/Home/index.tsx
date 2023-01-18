@@ -2,14 +2,23 @@ import styles from "./styles.module.scss";
 import Homelogo from "../../assets/svg/Home.svg";
 import Arrowright from "../../assets/svg/Arrowright.svg";
 import { useState } from "react";
+import ContactForm from "../ContactForm";
 
 export default function Home() {
   const [tabValue, setTabValue] = useState(0);
   return (
     <main>
       <div className={styles.bread_crumb}>
-        <img src={Homelogo} alt="home logo" />
-        <img src={Arrowright} alt="arrow point to right" />
+        <img
+          className={styles.bread_crumb_home}
+          src={Homelogo}
+          alt="home logo"
+        />
+        <img
+          className={styles.bread_crumb_arrow}
+          src={Arrowright}
+          alt="arrow point to right"
+        />
         <h2>INSTITUCIONAL</h2>
       </div>
       <div className={styles.tab_title}>
@@ -39,7 +48,7 @@ export default function Home() {
               setTabValue(2);
             }}
           >
-            Troca e Devolução
+            Entrega
           </button>
           <button
             className={tabValue === 3 ? styles.tab_active : ""}
@@ -47,12 +56,20 @@ export default function Home() {
               setTabValue(3);
             }}
           >
-            Segurança e Privacidade
+            Troca e Devolução
           </button>
           <button
             className={tabValue === 4 ? styles.tab_active : ""}
             onClick={() => {
               setTabValue(4);
+            }}
+          >
+            Segurança e Privacidade
+          </button>
+          <button
+            className={tabValue === 5 ? styles.tab_active : ""}
+            onClick={() => {
+              setTabValue(5);
             }}
           >
             Contato
@@ -62,7 +79,8 @@ export default function Home() {
           {(tabValue === 0 ||
             tabValue === 1 ||
             tabValue === 2 ||
-            tabValue === 3) && (
+            tabValue === 3 ||
+            tabValue === 4) && (
             <>
               <h2>Sobre</h2>
               <p>
@@ -95,6 +113,7 @@ export default function Home() {
               </p>
             </>
           )}
+          {tabValue === 5 && <ContactForm />}
         </div>
       </div>
     </main>

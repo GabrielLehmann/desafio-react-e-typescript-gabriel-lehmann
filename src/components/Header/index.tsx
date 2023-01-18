@@ -9,7 +9,9 @@ export default function Header() {
       <header>
         <div className={styles.header_top}>
           <div className={styles.first_div}>
-            <img className={styles.m3_logo} src={M3Logo} alt="logo m3" />
+            <a href="/">
+              <img className={styles.m3_logo} src={M3Logo} alt="logo m3" />
+            </a>
             <div className={styles.search}>
               <input type="text" placeholder="Buscar..."></input>
               <img src={Lupa} alt="lupa" />

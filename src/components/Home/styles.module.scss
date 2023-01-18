@@ -1,14 +1,23 @@
 .bread_crumb {
-  gap: 9px;
+  gap: 0.7vw;
   margin-top: 29px;
   margin-left: 7.8vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  .bread_crumb_home {
+    height: 1.25vw;
+  }
+
+  .bread_crumb_arrow {
+    height: 0.62vw;
+  }
+
   h2 {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 0.93vw;
+    line-height: 1.09vw;
     color: #c4c4c4;
   }
 }
@@ -19,7 +28,7 @@
   margin: 80px 0;
   h2 {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.88vw;
     line-height: 28px;
     letter-spacing: 0.1em;
   }
@@ -27,7 +36,6 @@
 
 .tab_layout {
   display: flex;
-  justify-content: center;
   margin: 0 7.8vw;
   margin-bottom: 70px;
 
@@ -36,7 +44,8 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    border-right: solid 1.5px black;
+    border-right: solid 2px black;
+    max-height: 285px;
 
     .tab_active {
       background-color: black;
@@ -64,6 +73,9 @@
   h2 {
     margin-top: 10px;
     margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
   }
   p {
     margin-bottom: 15.23px;
@@ -71,5 +83,30 @@
     font-size: 13px;
     line-height: 15px;
     color: #7d7d7d;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .tab_layout {
+    .tabs {
+      button {
+        width: 590px;
+        height: 58px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+  }
+  .tab_content {
+    h2 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    p {
+      font-size: 26px;
+      line-height: 30px;
+      color: #7d7d7d;
+    }
   }
 }

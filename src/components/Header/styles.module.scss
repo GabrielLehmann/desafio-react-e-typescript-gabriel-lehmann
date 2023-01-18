@@ -2,13 +2,19 @@
 
 .header_top {
   background: black;
-  padding: 22px 0;
+  padding: 1.72vw 0;
   color: white;
 
   .first_div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .m3_logo {
+      height: 2.02vw;
+      display: flex;
+      padding-left: 7.81vw;
+    }
 
     .search {
       width: 20.63vw;
@@ -23,16 +29,20 @@
 
       input {
         display: flex;
-        font-size: 14px;
         height: 32px;
-        border: 0;
         width: 77.27%;
+        border: 0;
+        font-size: 1.09vw;
+
+        &::placeholder {
+          color: #c4c4c4;
+        }
       }
 
       img {
         cursor: pointer;
+        height: 1.41vw;
         display: flex;
-        // width: 1.41vw;
         position: relative;
       }
     }
@@ -50,7 +60,7 @@
         align-items: center;
         display: flex;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 1.09vw;
         color: white;
         background: black;
         height: 28px;
@@ -58,21 +68,27 @@
       }
 
       .cart_button {
+        display: flex;
+        align-items: center;
         cursor: pointer;
         background: black;
         height: 28px;
         border: 0;
 
         img {
-          display: flex;
-          height: 28px;
+          width: 2.19vw;
         }
       }
     }
+  }
+}
 
-    .m3_logo {
-      display: flex;
-      padding-left: 7.81vw;
+@media screen and (min-width: 2499px) {
+  .header_top {
+    .search {
+      input {
+        height: 57px !important;
+      }
     }
   }
 }
@@ -93,7 +109,7 @@
     border: 0;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.09vw;
     cursor: pointer;
   }
 }
