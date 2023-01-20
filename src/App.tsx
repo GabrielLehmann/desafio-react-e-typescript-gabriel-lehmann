@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Institutional from "./components/Institutional";
 import Footer from "./components/Footer";
+import { AsideMenuContextProvider } from "./contexts/asideMenuContext";
+import AsideMenu from "./components/AsideMenu";
 
 const router = createBrowserRouter([
   {
@@ -20,9 +22,12 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <Header />
-      <RouterProvider router={router} />
-      <Footer />
+      <AsideMenuContextProvider>
+        <Header />
+        <AsideMenu />
+        <RouterProvider router={router} />
+        <Footer />
+      </AsideMenuContextProvider>
     </div>
   );
 }

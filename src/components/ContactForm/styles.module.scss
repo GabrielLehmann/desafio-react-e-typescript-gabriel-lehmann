@@ -12,6 +12,10 @@
     max-height: 46px;
     border: 1px solid #100d0e;
     border-radius: 25px;
+
+    &::placeholder {
+      color: #b9b7b7;
+    }
   }
   form {
     > div {
@@ -33,6 +37,7 @@
       line-height: 19px;
       border-radius: 25px;
       cursor: pointer;
+      letter-spacing: 0.05em;
     }
   }
   .label_form {
@@ -103,6 +108,37 @@
     .span_form {
       font-size: 24px;
       line-height: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .form_title {
+    margin-top: 30px !important;
+  }
+  .contact_form {
+    .Field {
+      width: 100% !important;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .label_form {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .confirm_form {
+      span {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      label {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .confirm_span {
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 }

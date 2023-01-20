@@ -2,13 +2,24 @@ import styles from "./styles.module.scss";
 import M3Logo from "../../assets/svg/M3logo.svg";
 import Lupa from "../../assets/svg/lupa.svg";
 import Cart from "../../assets/svg/cart.svg";
+import AsideMenu from "../../assets/svg/Aside.svg";
+import { useAside } from "../../contexts/asideMenuContext";
 
 export default function Header() {
+  const { setAsideMenuOpen } = useAside();
   return (
     <>
       <header>
         <div className={styles.header_top}>
           <div className={styles.first_div}>
+            <button
+              onClick={() => {
+                setAsideMenuOpen(true);
+              }}
+              className={styles.aside_menu}
+            >
+              <img src={AsideMenu} alt="Aside Menu" />
+            </button>
             <a href="/">
               <img className={styles.m3_logo} src={M3Logo} alt="logo m3" />
             </a>

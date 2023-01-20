@@ -97,6 +97,7 @@
 
       .news_button {
         width: 100% !important;
+        box-shadow: none !important;
       }
     }
   }
@@ -154,6 +155,7 @@
       font-weight: 400;
       font-size: 1.09vw;
       line-height: 16px;
+      color: #303030;
     }
   }
 
@@ -162,11 +164,61 @@
     gap: 0.78vw;
 
     a {
-      height: 2.73vw;
+      height: 35px;
     }
 
     img {
-      width: 2.73vw;
+      height: 35px;
+    }
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .redes_sociais_svg {
+    a {
+      height: 70px !important;
+    }
+    img {
+      height: 70px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer_top {
+    padding: 24px 0 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .menu_list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .menu_list_title {
+        font-weight: 500;
+        font-weight: bold;
+        font-size: 1.09vw;
+        display: flex;
+        justify-content: flex-start;
+      }
+      a {
+        display: none;
+      }
+      span {
+        display: none;
+      }
+    }
+    .redes_sociais {
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .redes_sociais_svg {
+      img {
+        width: 35px;
+      }
     }
   }
 }
@@ -261,16 +313,36 @@
     padding-left: 16px;
     gap: 15px;
 
+    p {
+      font-size: 10px !important;
+      line-height: 12px !important;
+      text-transform: capitalize;
+    }
+
     .pagamentos {
       margin-top: 15px;
       order: -1;
+      .certificado {
+        img {
+          width: 54.61px;
+        }
+      }
 
       .bandeiras {
         margin-left: unset;
+        img {
+          width: 36px;
+        }
       }
     }
     .logos {
       margin-left: unset;
+      margin-bottom: 15px;
+
+      p {
+        font-size: 10px !important;
+        line-height: 12px !important;
+      }
     }
   }
 }

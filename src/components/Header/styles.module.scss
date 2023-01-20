@@ -1,9 +1,14 @@
 // --------------------- Header Top --------------------- //
 
 .header_top {
+  position: relative;
   background: black;
-  padding: 1.72vw 0;
+  padding: 25px 0;
   color: white;
+
+  .aside_menu {
+    display: none;
+  }
 
   .first_div {
     display: flex;
@@ -17,10 +22,6 @@
     }
 
     .search {
-      width: 20.63vw;
-      background: white;
-      border-radius: 5px;
-      border: 2px solid #f2f2f2;
       position: relative;
       display: flex;
       align-items: center;
@@ -28,9 +29,13 @@
       gap: 3.79%;
 
       input {
+        padding-left: 16px;
+        width: 20.63vw;
+        background: white;
+        border-radius: 5px;
+        border: 2px solid #f2f2f2;
         display: flex;
         height: 32px;
-        width: 77.27%;
         border: 0;
         font-size: 1.09vw;
 
@@ -43,7 +48,8 @@
         cursor: pointer;
         height: 1.41vw;
         display: flex;
-        position: relative;
+        position: absolute;
+        right: 16px;
       }
     }
 
@@ -93,6 +99,51 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .header_top {
+    .first_div {
+      .aside_menu {
+        display: flex;
+        padding-left: 16px;
+        background-color: black;
+        border: 0;
+      }
+    }
+    height: 139px;
+    .search {
+      position: absolute !important;
+      bottom: 25px !important;
+      left: 16px !important;
+      right: 16px !important;
+      input {
+        width: 100% !important;
+        font-size: 14px !important;
+        line-height: 16px !important;
+      }
+      img {
+        width: 18px !important;
+      }
+    }
+    .m3_logo {
+      width: 236px !important;
+      height: 25.86px !important;
+      padding: 0 !important;
+    }
+    .header_button {
+      .button_entrar {
+        display: none !important;
+      }
+      .cart_button {
+        img {
+          position: absolute !important;
+          width: 28px !important;
+          right: 16px !important;
+        }
+      }
+    }
+  }
+}
+
 // --------------------- Header Bottom --------------------- //
 
 .header_bottom {
@@ -111,5 +162,11 @@
     font-weight: 500;
     font-size: 1.09vw;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header_bottom {
+    display: none;
   }
 }

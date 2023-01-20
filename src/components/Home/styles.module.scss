@@ -110,3 +110,62 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .bread_crumb {
+    margin-left: 16px;
+
+    .bread_crumb_home {
+      height: 16px;
+    }
+
+    .bread_crumb_arrow {
+      height: 8px;
+    }
+
+    h2 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  .tab_title {
+    margin: 80px 0 40px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .tab_layout {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+
+    .tabs {
+      margin: 0;
+      border-right: none;
+      .tab_active {
+        width: 100% !important;
+      }
+
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .tab_content {
+    margin-bottom: 81px;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
