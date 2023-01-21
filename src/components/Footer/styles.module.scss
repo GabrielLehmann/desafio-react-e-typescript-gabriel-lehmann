@@ -98,6 +98,7 @@
       .news_button {
         width: 100% !important;
         box-shadow: none !important;
+        border-radius: 0 !important;
       }
     }
   }
@@ -219,6 +220,15 @@
       img {
         width: 35px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu_list {
+    .menu_list_title {
+      font-size: 14px !important;
+      line-height: 16px !important;
     }
   }
 }
@@ -349,6 +359,7 @@
 
 @media screen and (max-width: 375px) {
   .footer_bottom {
+    padding-left: 16px !important;
     padding: 0;
 
     .pagamentos {

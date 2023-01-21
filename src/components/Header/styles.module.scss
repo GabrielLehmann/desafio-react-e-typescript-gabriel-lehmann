@@ -144,6 +144,23 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .header_top {
+    .first_div {
+      img {
+        height: 18px !important;
+      }
+    }
+    .header_button {
+      .cart_button {
+        img {
+          height: 28px !important ;
+        }
+      }
+    }
+  }
+}
+
 // --------------------- Header Bottom --------------------- //
 
 .header_bottom {
