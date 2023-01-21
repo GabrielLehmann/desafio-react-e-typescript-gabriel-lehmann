@@ -1,0 +1,64 @@
+.blackout {
+  position: fixed;
+  inset: 0;
+  background: rgba(69, 69, 69, 0.7);
+  z-index: 999;
+}
+
+.closed {
+  transform: translateX(-100%);
+}
+
+.invisible {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container {
+  position: absolute;
+  transition: 0.3s;
+  left: 0%;
+  right: 3.52%;
+  top: 0%;
+  bottom: 57.02%;
+}
+
+.in_out {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 31px 0 31px 16px;
+
+  .in_button {
+    background-color: black;
+    color: white;
+    border: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .out_button {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding-right: 16px;
+  }
+}
+.aside_buttons_div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: white;
+  height: 585px;
+  padding: 31px 0 0 16px;
+  .aside_buttons {
+    display: flex;
+    border: 0;
+    justify-content: flex-start;
+    background-color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c4c4c4;
+  }
+}

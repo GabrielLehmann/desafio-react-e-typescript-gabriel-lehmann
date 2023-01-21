@@ -1,0 +1,37 @@
+.overIcon {
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  bottom: 189px;
+  right: 16px;
+  gap: 5px;
+
+  button {
+    border: 0;
+    background: none;
+    height: 34px;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .overIcon {
+    bottom: 229.24px;
+    button {
+      height: 66px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .overIcon {
+    bottom: 51px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .overIcon {
+    bottom: 29px;
+  }
+}

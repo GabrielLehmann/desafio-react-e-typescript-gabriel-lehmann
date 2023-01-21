@@ -1,0 +1,171 @@
+.bread_crumb {
+  gap: 0.7vw;
+  margin-top: 29px;
+  margin-left: 7.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .bread_crumb_home {
+    height: 1.25vw;
+  }
+
+  .bread_crumb_arrow {
+    height: 0.62vw;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 0.93vw;
+    line-height: 1.09vw;
+    color: #c4c4c4;
+  }
+}
+
+.tab_title {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+  h2 {
+    font-weight: 400;
+    font-size: 1.88vw;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.tab_layout {
+  display: flex;
+  margin: 0 7.8vw;
+  margin-bottom: 70px;
+
+  .tabs {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    border-right: solid 2px black;
+    max-height: 285px;
+
+    .tab_active {
+      background-color: black;
+      color: white;
+      font-weight: 700;
+    }
+
+    button {
+      cursor: pointer;
+      width: 302px;
+      height: 39px;
+      padding-left: 16px;
+      background-color: white;
+      color: #7d7d7d;
+      text-align: start;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      border: none;
+    }
+  }
+}
+
+.tab_content {
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  p {
+    margin-bottom: 15.23px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #7d7d7d;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .tab_layout {
+    .tabs {
+      button {
+        width: 590px;
+        height: 58px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+  }
+  .tab_content {
+    h2 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    p {
+      font-size: 26px;
+      line-height: 30px;
+      color: #7d7d7d;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bread_crumb {
+    margin-left: 16px;
+
+    .bread_crumb_home {
+      height: 16px;
+    }
+
+    .bread_crumb_arrow {
+      height: 8px;
+    }
+
+    h2 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  .tab_title {
+    margin: 80px 0 40px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .tab_layout {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+
+    .tabs {
+      margin: 0;
+      border-right: none;
+      .tab_active {
+        width: 100% !important;
+      }
+
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .tab_content {
+    margin-bottom: 81px;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
